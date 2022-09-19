@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnotherNewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Outkast App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue8-hR-OYM">
+                                <rect key="frame" x="76" y="138" width="239" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="SIB-NW-YzP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="27"/>
+                                <color key="textColor" red="0.55272893305425042" green="0.35375933880572552" blue="0.43395366535320151" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="outkast2" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-WX-ZoY">
+                                <rect key="frame" x="75" y="313" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Qms-oG-hAZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KX0-jo-reo">
+                                <rect key="frame" x="126" y="507" width="139" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DyR-sj-XRw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8M-Dn-1Gk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KX0-jo-reo" firstAttribute="top" secondItem="UV6-WX-ZoY" secondAttribute="bottom" constant="66" id="6Ef-o6-WkH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KX0-jo-reo" secondAttribute="bottom" constant="223" id="E3d-DV-97W"/>
+                            <constraint firstItem="ue8-hR-OYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KB1-2Q-6qO"/>
+                            <constraint firstItem="ue8-hR-OYM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="MxH-Cf-pMt"/>
+                            <constraint firstItem="ue8-hR-OYM" firstAttribute="trailing" secondItem="UV6-WX-ZoY" secondAttribute="trailing" id="Vzb-9g-Ahh"/>
+                            <constraint firstItem="ue8-hR-OYM" firstAttribute="centerX" secondItem="UV6-WX-ZoY" secondAttribute="centerX" id="X4y-4E-6Ob"/>
+                            <constraint firstItem="ue8-hR-OYM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="Xqz-xR-oSm"/>
+                            <constraint firstItem="KX0-jo-reo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="fB2-P9-18X"/>
+                            <constraint firstItem="UV6-WX-ZoY" firstAttribute="centerX" secondItem="KX0-jo-reo" secondAttribute="centerX" id="yp4-TG-FhV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImage" destination="UV6-WX-ZoY" id="uTt-vw-1fZ"/>
+                        <outlet property="myLabel" destination="ue8-hR-OYM" id="7T0-Ac-adv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="-19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="outkast2" width="497" height="280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
